@@ -60,7 +60,7 @@ class Mystrom extends utils.Adapter {
                         }, 5000);
                         this.appUpdateInterval = setInterval(() => {
                             this.getDeviceList();
-                        }, 30 * 60 * 1000); //30min
+                        }, 01 * 60 * 1000); //changed to 1 minute
                     })
                     .catch(() => {
                         this.log.error("Get Devices failed");
